@@ -16,10 +16,12 @@ a {
 header {
   width: 100%;
   height: 60px;
+  padding: 6px;
 }
 header nav {
   display: flex;
   justify-content: flex-end;
+  padding-top: 10px;
 }
 header nav .nav-right-section {
   width: 250px;
@@ -29,21 +31,40 @@ header nav .nav-right-section {
   justify-content: center;
   align-items: center;
 }
+nav .nav-right-section li {
+  margin-left: 5px;
+}
 nav .nav-right-section a {
   margin-right: 10px;
-  color: #000000;
+  color: #ffff;
+  font-size: 13px;
+}
+nav .nav-right-section a:hover {
+  text-decoration: underline;
 }
 nav .nav-right-section .menu-icon {
-  background-image: url('https://static.thenounproject.com/png/756729-200.png');
+  /* background-image: url('https://static.thenounproject.com/png/756729-200.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 25px;
   height: 25px;
 }
-nav .nav-right-section img {
-  border-radius: 50%;
-  margin-left: 10px;
+nav .nav-right-section .menu-icon a {
+  /* padding: 8px; */
+}
+path {
+  fill: currentColor;
+  color: #ffffffde;
+}
+nav .nav-right-section .sign-in button {
+  padding: 9px 23px;
+  border-radius: 5px;
+  margin: 0 8px;
+  background-color: #8ab4f8;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 main {
@@ -78,13 +99,11 @@ main .main-input input {
   padding-left: 10px;
   border: none;
   outline: none;
-  background-color: #202124;
+  background-color: transparent;
   color: white;
 
 }
-main .main-input input:hover {
-  background-color: #303134;
-}
+
 main .main-input-container:hover {
   box-shadow: 0 1px 6px 0 #202124;
   border-color: #303134;
@@ -103,8 +122,8 @@ main .main-input .micro-icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 
@@ -118,7 +137,7 @@ main .main-buttons div {
 main .main-buttons button {
   height: 36px;
   background-color: #303134;
-  border: 0;
+  border: 1px solid transparent;
   font-size: 14px;
   color: #ffff;
   border-radius: 5px;
@@ -127,7 +146,7 @@ main .main-buttons button {
 }
 main .main-buttons button:hover {
   border: 1px solid #5f6368;
-  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   color: #ffff;
 }
 
@@ -141,7 +160,6 @@ footer {
   align-items: center;
   font-size: 14px;
   background-color: #171717;
-  border-top: 1px solid #e4e4e4;
 }
 footer ul {
   margin: 10px;
@@ -157,5 +175,8 @@ footer .footer-right {
 }
 footer ul li a {
   margin: 10px;
-  color: #5f6368;
+  color: #999da2;
+}
+footer ul li a:hover {
+  text-decoration: underline;
 }
