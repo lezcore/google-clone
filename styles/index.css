@@ -22,9 +22,10 @@ header nav {
   display: flex;
   justify-content: flex-end;
   padding-top: 10px;
+  /* padding-right: 10px; */
 }
 header nav .nav-right-section {
-  width: 250px;
+  width: 300px;
   height: auto;
   display: flex;
   list-style: none;
@@ -32,10 +33,10 @@ header nav .nav-right-section {
   align-items: center;
 }
 nav .nav-right-section li {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 nav .nav-right-section a {
-  margin-right: 10px;
+  /* margin: 8px; */
   color: #ffff;
   font-size: 13px;
 }
@@ -58,7 +59,7 @@ path {
   color: #ffffffde;
 }
 nav .nav-right-section .sign-in button {
-  padding: 9px 23px;
+  padding: 9px 25px;
   border-radius: 5px;
   margin: 0 8px;
   background-color: #8ab4f8;
@@ -151,6 +152,17 @@ main .main-buttons button:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   color: #ffff;
 }
+.offered {
+  margin: 25px;
+  color: #bdc1c6;
+  font-size: 14px;
+}
+.offered a {
+  color: #8ab4f8;
+}
+.offered a:hover {
+  text-decoration: underline;
+}
 .country {
   width: 100%;
   height: 50px;
@@ -191,7 +203,7 @@ footer .footer-right {
   justify-self: right;
 }
 footer ul li a {
-  margin: 10px 15px;
+  margin: 10px;
   color: #999da2;
 }
 footer ul li a:hover {
